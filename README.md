@@ -1,6 +1,6 @@
 # HaGRID - HAnd Gesture Recognition Image Dataset
 
-![hagrid](images/hagrid.jpg)
+![hagrid]
 
 We introduce a large image dataset **HaGRIDv2** (**HA**nd **G**esture **R**ecognition **I**mage **D**ataset) for hand gesture recognition (HGR) systems. You can use it for image classification or image detection tasks. Proposed dataset allows to build HGR systems, which can be used in video conferencing services (Zoom, Skype, Discord, Jazz etc.), home automation systems, the automotive sector, etc. We have also released an algorithm for dynamic gesture recognition, which we described in our paper. This model is trained entirely on HaGRIDv2 and enables the recognition of dynamic gestures while being trained exclusively on static ones. You can find it in our [repository](https://github.com/ai-forever/dynamic_gestures).
 
@@ -14,8 +14,7 @@ Example of sample and its annotation:
 
 ![example](images/hagrid_samples.jpg)
 
-For more information see our arxiv [paper](https://arxiv.org/abs/2412.01508).
-
+For more information see our arxiv [paper]
 ## 🔥 Changelog
 - **`2025/02/27`**: We release [Dynamic Gesture Recognition algorithm](https://github.com/ai-forever/dynamic_gestures). 🙋
   - Introduced a novel algorithm that enables dynamic gesture recognition while being trained exclusively on static gestures
@@ -52,7 +51,7 @@ For more information see our arxiv [paper](https://arxiv.org/abs/2412.01508).
 ## Installation
 Clone and install required python packages:
 ```bash
-git clone https://github.com/hukenovs/hagrid.git
+git clone https://github.com/chinni8-cpu/vanitha.git
 # or mirror link:
 cd hagrid
 # Create virtual env by conda or venv
