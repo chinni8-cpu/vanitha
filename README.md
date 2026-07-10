@@ -12,7 +12,7 @@ The dataset contains **65,977** unique persons and at least this number of uniqu
 
 Example of sample and its annotation:
 
-![example](images/hagrid_samples.jpg)
+![example]
 
 For more information see our arxiv [paper]
 ## 🔥 Changelog
