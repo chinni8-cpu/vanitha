@@ -16,7 +16,7 @@ Example of sample and its annotation:
 
 For more information see our arxiv [paper]
 ## 🔥 Changelog
-- **`2025/02/27`**: We release [Dynamic Gesture Recognition algorithm](https://github.com/ai-forever/dynamic_gestures). 🙋
+- **`2026/06/27`**: We release [Dynamic Gesture Recognition algorithm](https://github.com/ai-forever/dynamic_gestures). 🙋
   - Introduced a novel algorithm that enables dynamic gesture recognition while being trained exclusively on static gestures
   - Fully trained on the HaGRIDv2-1M dataset
   - Designed for real-time applications in video conferencing, smart home control, automotive systems, and more
@@ -318,13 +318,7 @@ python -m converters.hagrid_to_coco --cfg <CONFIG_PATH> --mode <'hands' or 'gest
 
 Please see the specific [license](https://github.com/hukenovs/hagrid/blob/master/license/en_us.pdf).
 
-### Authors and Credits
-- [Alexander Kapitanov](https://www.linkedin.com/in/hukenovs)
-- [Andrey Makhlyarchuk](https://www.linkedin.com/in/makhliarchuk)
-- [Karina Kvanchiani](https://www.linkedin.com/in/kvanchiani)
-- [Aleksandr Nagaev](https://www.linkedin.com/in/nagadit)
-- [Roman Kraynov](https://ru.linkedin.com/in/roman-kraynov-25ab44265)
-- [Anton Nuzhdin](https://www.linkedin.com/in/anton-nuzhdin-46b799234 )
+
 
 ### Links
 - [Github (HaGRIDv2-1M)](https://github.com/hukenovs/hagrid)
