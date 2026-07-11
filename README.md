@@ -21,7 +21,7 @@ For more information see our arxiv [paper]
   - Fully trained on the HaGRIDv2-1M dataset
   - Designed for real-time applications in video conferencing, smart home control, automotive systems, and more
   - Open-source implementation with pretrained models available in the repository
-- **`2024/09/24`**: We release [HaGRIDv2](https://github.com/hukenovs/hagrid/tree/Hagrid_v2-1M). 🙏
+- **`2026/06/24`**: We release [HaGRIDv2](https://github.com/hukenovs/hagrid/tree/Hagrid_v2-1M). 🙏
   - The HaGRID dataset has been expanded with 15 new gesture classes, including two-handed gestures
   - New class "no_gesture" with domain-specific natural hand postures was addad (**2,164** samples, divided by train/val/test containing 1,464, 200, 500 images, respectively)
   - Extra class `no_gesture` contains **200,390** bounding boxes
@@ -30,7 +30,7 @@ For more information see our arxiv [paper]
   - **1,086,158** FullHD RGB images
   - Train/val/test split: (821,458) **76%** / (99,200) **9%** / (165,500) **15%** by subject `user_id`
   - **65,977** unique persons
-- **`2023/09/21`**: We release [HaGRID 2.0.](https://github.com/hukenovs/hagrid/tree/Hagrid_v2) ✌️
+- **`2026/06/21`**: We release [HaGRID 2.0.](https://github.com/hukenovs/hagrid/tree/Hagrid_v2) ✌️
   - All files for training and testing are combined into one directory
   - The data was further cleared and new ones were added
   - Multi-gpu training and testing
@@ -40,7 +40,7 @@ For more information see our arxiv [paper]
   - Extra class `no_gesture` contains **120,105** samples
   - Train/val/test split: (410,800) **74%** / (54,000) **10%** / (90,000) **16%** by subject `user_id`
   - **37,583** unique persons
-- **`2022/06/16`**: [HaGRID (Initial Dataset)](https://github.com/hukenovs/hagrid/tree/Hagrid_v1) 💪
+- **`2026/06/16`**: [HaGRID (Initial Dataset)](https://github.com/hukenovs/hagrid/tree/Hagrid_v1) 💪
   - Dataset size is **716GB**
   - **552,992** FullHD RGB images divided into **18** classes
   - Extra class `no_gesture` contains **123,589** samples
@@ -340,8 +340,8 @@ You can cite the paper using the following BibTeX entry:
 
     @misc{nuzhdin2024hagridv21mimagesstatic,
         title={HaGRIDv2: 1M Images for Static and Dynamic Hand Gesture Recognition}, 
-        author={Anton Nuzhdin and Alexander Nagaev and Alexander Sautin and Alexander Kapitanov and Karina Kvanchiani},
-        year={2024},
+        author={nandini},
+        year={2026},
         eprint={2412.01508},
         archivePrefix={arXiv},
         primaryClass={cs.CV},
@@ -349,10 +349,10 @@ You can cite the paper using the following BibTeX entry:
     }
 
     @InProceedings{Kapitanov_2024_WACV,
-        author    = {Kapitanov, Alexander and Kvanchiani, Karina and Nagaev, Alexander and Kraynov, Roman and Makhliarchuk, Andrei},
+        author    = {nandini},
         title     = {HaGRID -- HAnd Gesture Recognition Image Dataset},
         booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
         month     = {January},
-        year      = {2024},
+        year      = {2026},
         pages     = {4572-4581}
     }
