@@ -1,7 +1,7 @@
 # Hand Gesture Recognition
 
 This project provides a comprehensive suite for hand gesture recognition, implementing two distinct approaches:
-1.  A **Deep Learning pipeline** for training and deploying high-accuracy gesture detection and classification models on large datasets.
+1.  A **Deep Learning pipeline** for training and deploying high-accuracy gesture detection and classification models on large datasets like HaGRID.
 2.  A lightweight, real-time **MediaPipe-based recognizer** with a futuristic Heads-Up Display (HUD) for immediate, on-the-fly gesture classification without extensive training.
 
 ![Demo GIF](images/demo.gif)
@@ -25,6 +25,14 @@ This project provides a comprehensive suite for hand gesture recognition, implem
 - **Interactive HUD**: A visually appealing and informative Heads-Up Display showing the detected gesture, confidence score, and FPS.
 - **On-the-Fly Training**: Interactively add new custom gestures by simply showing them to the camera and giving them a name.
 
+## HaGRID Dataset Information
+
+The primary dataset for the deep learning module is [HaGRID (Hand Gesture Recognition Image Dataset)](https://github.com/hukenovs/hagrid).
+
+The dataset contains **65,977** unique persons and at least this number of unique scenes. The subjects are people over 18 years old. The dataset was collected mainly indoors with considerable variation in lighting, including artificial and natural light. Besides, the dataset includes images taken in extreme conditions such as facing and backing to a window. Also, the subjects had to show gestures at a distance of 0.5 to 4 meters from the camera.
+
+For more information see the original arxiv [paper](https://arxiv.org/abs/2206.08219).
+
 ## Installation
 
 1.  **Clone the repository:**
@@ -45,13 +53,19 @@ This project provides a comprehensive suite for hand gesture recognition, implem
 
 ### Part 1: Deep Learning Module
 
-This module is intended for training high-performance models on a structured dataset like [HAGRID](https://github.com/hukenovs/hagrid).
+This module is intended for training high-performance models on a structured dataset like HaGRID.
 
 #### 1. Dataset Setup
 You will need to download and structure your dataset. Use the provided scripts as a reference for preparing your data:
 - `download.py`
 - `organize_dataset.py`
 - `converters/`
+
+To convert annotations to [Coco](https://cocodataset.org/#home) format, run the following command:
+
+```bash
+python -m converters.hagrid_to_coco --cfg <CONFIG_PATH> --mode <'hands' or 'gestures'>
+```
 
 #### 2. Training a Model
 To train a model, choose a configuration file from the `configs/` directory and run the `run.py` script.
@@ -115,4 +129,16 @@ On the first run, it will automatically:
 ```
 
 ## License
-This project is licensed under the terms of the license specified in the `license` directory.
+This work is licensed under a variant of <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Please see the specific [license](license/en_us.pdf) file.
+
+## Citation
+You can cite the original HaGRID paper using the following BibTeX entry:
+
+    @InProceedings{Kapitanov_2022_WACV,
+        author    = {Kapitanov, Aleksandr and Nuzhdin, Aleksandr and Kenin, Roman and Shpilman, Aleksandr},
+        title     = {HaGRID -- HAnd Gesture Recognition Image Dataset},
+        booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+        month     = {January},
+        year      = {2022},
+        pages     = {4572-4581}
+    }
