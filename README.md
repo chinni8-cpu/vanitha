@@ -25,13 +25,7 @@ This project provides a comprehensive suite for hand gesture recognition, implem
 - **Interactive HUD**: A visually appealing and informative Heads-Up Display showing the detected gesture, confidence score, and FPS.
 - **On-the-Fly Training**: Interactively add new custom gestures by simply showing them to the camera and giving them a name.
 
-## HaGRID Dataset Information
 
-The primary dataset for the deep learning module is [HaGRID (Hand Gesture Recognition Image Dataset)](https://github.com/hukenovs/hagrid).
-
-The dataset contains **65,977** unique persons and at least this number of unique scenes. The subjects are people over 18 years old. The dataset was collected mainly indoors with considerable variation in lighting, including artificial and natural light. Besides, the dataset includes images taken in extreme conditions such as facing and backing to a window. Also, the subjects had to show gestures at a distance of 0.5 to 4 meters from the camera.
-
-For more information see the original arxiv [paper](https://arxiv.org/abs/2206.08219).
 
 ## Installation
 
@@ -128,17 +122,5 @@ On the first run, it will automatically:
 └── gesture_recognizer.py # Standalone MediaPipe HUD recognizer
 ```
 
-## License
-This work is licensed under a variant of <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Please see the specific [license](license/en_us.pdf) file.
 
-## Citation
-You can cite the original HaGRID paper using the following BibTeX entry:
-
-    @InProceedings{Kapitanov_2022_WACV,
-        author    = {Kapitanov, Aleksandr and Nuzhdin, Aleksandr and Kenin, Roman and Shpilman, Aleksandr},
-        title     = {HaGRID -- HAnd Gesture Recognition Image Dataset},
-        booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-        month     = {January},
-        year      = {2022},
-        pages     = {4572-4581}
     }
