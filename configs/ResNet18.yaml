@@ -14,13 +14,13 @@ early_stopping:
 
 # Dataset configuration
 dataset:
-    annotations_train: <path_to_json_train>
-    annotations_val: <path_to_json_val>
-    annotations_test: <path_to_json_test>
+    annotations_train: dataset/annotations/train
+    annotations_val: dataset/annotations/val
+    annotations_test: dataset/annotations/test
 
-    dataset_train: <path_to_dataset_folder>
-    dataset_val: <path_to_dataset_folder>
-    dataset_test: <path_to_dataset_folder>
+    dataset_train: dataset/hand_dataset/archive/train
+    dataset_val: dataset/hand_dataset/archive/test
+    dataset_test: dataset/hand_dataset/archive/test
 
     img_size: &img_size 224 # Image size for training, must be square
     img_mean: &img_mean [0.54, 0.499, 0.474]
